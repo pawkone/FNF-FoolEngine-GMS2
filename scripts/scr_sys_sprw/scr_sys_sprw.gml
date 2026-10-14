@@ -219,7 +219,7 @@ function sprw_draw(xx, yy, xscale = 1, yscale = 1, angle = 0, colour = c_white, 
     }
     if sprw_frame_index < ds_list_size(sprw_cur_anim_frames) - 1
     {
-        sprw_frame_timer += sprw_frame_rate * (delta_time / 1000000)
+        sprw_frame_timer += sprw_frame_rate * global.fpsMult/60
         if sprw_frame_timer >= 1
         {
             sprw_frame_timer = 0

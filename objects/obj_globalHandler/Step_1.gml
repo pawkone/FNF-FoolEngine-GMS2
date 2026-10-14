@@ -1,5 +1,5 @@
-game_set_speed(global.fps, gamespeed_fps)
-global.fpsMult = delta_time * 0.00006
+if roomLagDelay-- <= 0
+	global.fpsMult = delta_time * 0.00006
 if fp_updatetime <= 0
 {
 	fp_updatetime = 30

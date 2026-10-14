@@ -133,7 +133,7 @@ function mGP_hitNote(dirNote, holdNote, distanceToPerfect = 0, endpart = false)
 		else
 			global.mGP_score += 2
 	}
-	if global.settings_noteSplashes
+	if global.mS_noteSplashes
 	{
 		if !holdNote && dirNote >= 4 && distanceToPerfect <= 33
 		{

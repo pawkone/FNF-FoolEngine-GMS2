@@ -23,7 +23,7 @@ if note_time - 10 <= global.mGP_curTime && dir <= 3
 }
 if dir >= 4 && y <= -100 + (global.mGP_strumpos[dir][1]-64)
 {
-	if !global.settings_botPlay
+	if !global.mS_botPlay
 	{
 		if audio_exists(obj_mainGamePlay.vocals)
 			audio_sound_gain(obj_mainGamePlay.vocals, 0, 0)

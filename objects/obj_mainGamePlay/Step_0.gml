@@ -31,7 +31,7 @@ if timer > 0
 	}
 
 	countdownalpha = gmltween_EaseOutCubic(countdowntime,0,1,1)
-	countdowntime -= (delta_time/1000000)/_o
+	countdowntime -= global.fpsMult/60/_o
 	global.mGP_curTime = (timer*-1000)
 	if timer <= 0
 	{
@@ -118,7 +118,7 @@ with (obj_arrowHold)
 	var dist = abs(global.mGP_curTime - note_time)
 	if dist <= 35
 	{
-	    if (global.settings_botPlay || keyboard_check(key))
+	    if (global.mS_botPlay || keyboard_check(key))
 		{
 			if audio_exists(obj_mainGamePlay.vocals)
 				audio_sound_gain(obj_mainGamePlay.vocals, 1, 0)
@@ -151,7 +151,7 @@ for (var d = 4; d <= 7; d++)
     var key = noone
 	if d >= 4 && d <= 7
 		key = global.mGP_keys[d-4]
-    if keyboard_check_pressed(key) || global.settings_botPlay
+    if keyboard_check_pressed(key) || global.mS_botPlay
     {
         var nearest_note = noone
         var nearest_dist = 999999
@@ -161,8 +161,8 @@ for (var d = 4; d <= 7; d++)
 			{
 				var dist = abs(global.mGP_curTime - note_time)
 				if (
-					(global.settings_botPlay && global.mGP_curTime - note_time + 10 >= 0)||
-					(!global.settings_botPlay && dist <= 100)
+					(global.mS_botPlay && global.mGP_curTime - note_time + 10 >= 0)||
+					(!global.mS_botPlay && dist <= 100)
 				) && dist < nearest_dist
 	            {
 	                nearest_note = id
@@ -176,7 +176,7 @@ for (var d = 4; d <= 7; d++)
 				audio_sound_gain(vocals, 1, 0)
 			if audio_exists(vocals2)
 				audio_sound_gain(vocals2, 1, 0)
-			if global.settings_hitSounds
+			if global.mS_hitSounds
 			{
 				hitsoundDir = d
 				gmlvm_vm(global.mS_hitsoundScript)
@@ -200,7 +200,7 @@ for (var d = 4; d <= 7; d++)
                 instance_destroy()
             }
         }
-		else if !global.settings_ghostTapping && !global.settings_botPlay // MISSED (if no ghost tapping)
+		else if !global.mS_ghostTapping && !global.mS_botPlay // MISSED (if no ghost tapping)
 		{
 			if audio_exists(vocals)
 				audio_sound_gain(vocals, 0, 0)

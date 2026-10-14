@@ -12,7 +12,7 @@ if menu == 1
 {
 	debugui_checkbox(300, 50, "settings_hitSounds", true, "Hitsounds", 2, 2,true)
 	
-	if global.settings_hitSounds
+	if global.mS_hitSounds
 	{
 		_sss = point_in_rectangle(mouse_x, mouse_y, 0, 100-16, global.gameSizeW, 100+16)
 		draw_set_colour(_sss ? c_aqua : c_white)
@@ -34,9 +34,9 @@ if menu == 3
 
 	_sss = point_in_rectangle(mouse_x, mouse_y, 0, 100-16, global.gameSizeW, 100+16)
 	draw_set_colour(_sss ? c_aqua : c_white)
-	draw_text(300, 100, "Max FPs : " + string(global.settings_maxFps))
+	draw_text(300, 100, "Max FPs : " + string(global.mS_maxFps))
 	if mouse_check_button_pressed(mb_left) && _sss
-		global.settings_maxFps = get_integer("Enter new 'Max FPs'", global.settings_maxFps)
+		global.mS_maxFps = get_integer("Enter new 'Max FPs'", global.mS_maxFps)
 }
 if menu == 0
 {

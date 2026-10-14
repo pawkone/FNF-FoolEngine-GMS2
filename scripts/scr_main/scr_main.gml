@@ -14,7 +14,6 @@ gc_target_frame_time(-100)
 gmlvm_init()
 
 global.assetsfolder = (GM_build_type == "run" ? working_directory : program_directory) + "assets/"
-global.fps = 60
 global.fpsMult = 0
 global.gameSizeW = 1280
 global.gameSizeH = 720

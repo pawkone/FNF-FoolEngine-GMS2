@@ -9,15 +9,15 @@ function mS_load(_open_ini = false)
 	{
 		ini_open(global.mS_savePath)
 
-		global.settings_hitSounds = ini_read_real("Gameplay", "Hitsounds", false)
+		global.mS_hitSounds = ini_read_real("Gameplay", "Hitsounds", false)
 		global.mS_hitsoundName = ini_read_string("Gameplay", "HitsoundsName", "foolengine")
-		global.settings_ghostTapping = ini_read_real("Gameplay", "ghostTapping", true)
-		global.settings_botPlay = ini_read_real("Gameplay", "Botplay", false)
+		global.mS_ghostTapping = ini_read_real("Gameplay", "ghostTapping", true)
+		global.mS_botPlay = ini_read_real("Gameplay", "Botplay", false)
 		
-		global.settings_noteSplashes = ini_read_real("Visuals", "noteSplashes", true)
+		global.mS_noteSplashes = ini_read_real("Visuals", "noteSplashes", true)
 
-		global.settings_vSync = ini_read_real("Graphics", "vSync", false)
-		global.settings_maxFps = ini_read_real("Graphics", "maxFps", 60)
+		global.mS_vSync = ini_read_real("Graphics", "vSync", false)
+		global.mS_maxFps = ini_read_real("Graphics", "maxFps", 60)
 		
 		global.mGP_keys[0] = ini_read_real("Controls", "mGP_keys_0", ord("A"))
 		global.mGP_keys[1] = ini_read_real("Controls", "mGP_keys_1", ord("S"))
@@ -27,9 +27,9 @@ function mS_load(_open_ini = false)
 		ini_close()
 	}
 	
-	display_reset(0, global.settings_vSync)
-	global.fps = global.settings_maxFps
-	if global.settings_hitSounds
+	display_reset(0, global.mS_vSync)
+	game_set_speed(global.mS_maxFps, gamespeed_fps)
+	if global.mS_hitSounds
 		mS_hitsound()
 }
 function mS_save()
@@ -38,15 +38,15 @@ function mS_save()
 	
 	ini_write_string("WARNING", "", "this is used for pre-final fool engine save files!")
 	
-	ini_write_real("Gameplay", "Hitsounds", global.settings_hitSounds)
+	ini_write_real("Gameplay", "Hitsounds", global.mS_hitSounds)
 	ini_write_string("Gameplay", "HitsoundsName", global.mS_hitsoundName)
-	ini_write_real("Gameplay", "ghostTapping", global.settings_ghostTapping)
-	ini_write_real("Gameplay", "Botplay", global.settings_botPlay)
+	ini_write_real("Gameplay", "ghostTapping", global.mS_ghostTapping)
+	ini_write_real("Gameplay", "Botplay", global.mS_botPlay)
 	
-	ini_write_real("Visuals", "noteSplashes", global.settings_noteSplashes)
+	ini_write_real("Visuals", "noteSplashes", global.mS_noteSplashes)
 	
-	ini_write_real("Graphics", "vSync", global.settings_vSync)
-	ini_write_real("Graphics", "maxFps", global.settings_maxFps)
+	ini_write_real("Graphics", "vSync", global.mS_vSync)
+	ini_write_real("Graphics", "maxFps", global.mS_maxFps)
 	
 	ini_write_real("Controls", "mGP_keys_0", global.mGP_keys[0])
 	ini_write_real("Controls", "mGP_keys_1", global.mGP_keys[1])
