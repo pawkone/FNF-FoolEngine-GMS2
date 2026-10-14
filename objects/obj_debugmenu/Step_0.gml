@@ -29,7 +29,7 @@ else if global.savedebugmenu_menu == debugmenu_scrtype.selectchart
 		global.mGP_name = global.savedebugmenu_cursong
 		global.mGP_chart = global.savedebugmenu_items[global.savedebugmenu_selected]
 		global.savedebugmenu_fromdebug = true
-		var quest = get_string("Do you wanna load this song in..\n\n1 = gameplay state\n2 = chart editor\nAnything else = cancel", "")
+		var quest = get_string("Do you wanna load this song in..\n\n1 = gameplay state\n2 = chart editor\nCancel/X = select song for later use", "")
 		if quest == "2"
 			room_goto(rm_editorSongs)
 		else if quest == "1"
