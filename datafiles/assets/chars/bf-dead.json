@@ -1,0 +1,45 @@
+{
+  "animations":[
+    {
+      "loop":false,
+      "offset":[
+        -5.0,
+        0.0
+      ],
+      "xmlPrefix":"BF dies",
+      "name":"deathStart"
+    },
+    {
+      "loop":true,
+      "offset":[
+        -5.0,
+        -6.0
+      ],
+      "xmlPrefix":"BF Dead Loop",
+      "name":"deathLoop"
+    },
+    {
+      "loop":false,
+      "offset":[
+        -5.0,
+        58.0
+      ],
+      "xmlPrefix":"BF Dead confirm",
+      "name":"deathEnd"
+    }
+  ],
+  "scale":1.0,
+  "flipX":false,
+  "position":[
+    0.0,
+    0.0
+  ],
+  "frameRate":24.0,
+  "imagePath":"assets\/images\/characters\/BOYFRIEND_DEAD",
+  "playableCharacter":true,
+  "displayName":"Boyfriend Death",
+  "camOffset":[
+    0.0,
+    0.0
+  ]
+}

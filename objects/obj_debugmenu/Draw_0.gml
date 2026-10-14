@@ -1,0 +1,1 @@
+try{draw_surface(sur,0,0)}catch(e){event_user(4)}

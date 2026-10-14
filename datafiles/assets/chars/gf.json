@@ -1,0 +1,36 @@
+{
+  "animations":[
+    {
+      "loop":false,
+      "offset":[
+        0.0,
+        0.0
+      ],
+      "xmlPrefix":"GF Dancing Beat LEFT",
+      "name":"danceLeft"
+    },
+    {
+      "loop":false,
+      "offset":[
+        0.0,
+        0.0
+      ],
+      "xmlPrefix":"GF Dancing Beat RIGHT",
+      "name":"danceRight"
+    }
+  ],
+  "scale":1.0,
+  "flipX":true,
+  "position":[
+    -200.0,
+    -350.0
+  ],
+  "frameRate":24.0,
+  "imagePath":"assets\/images\/characters\/GIRLFRIEND",
+  "playableCharacter":false,
+  "displayName":"Girlfriend",
+  "camOffset":[
+    0.0,
+    0.0
+  ]
+}

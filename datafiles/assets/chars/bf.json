@@ -1,0 +1,126 @@
+{
+  "position":[
+    0.0,
+    0.0
+  ],
+  "frameRate":24.0,
+  "imagePath":"assets\/images\/characters\/BOYFRIEND",
+  "playableCharacter":true,
+  "displayName":"Boyfriend",
+  "camOffset":[
+    0.0,
+    0.0
+  ],
+  "animations":[
+    {
+      "name":"idle",
+      "offset":[
+        -5.0,
+        0.0
+      ],
+      "xmlPrefix":"BF idle dance",
+      "loop":false
+    },
+    {
+      "name":"singLEFT",
+      "offset":[
+        5.0,
+        -6.0
+      ],
+      "xmlPrefix":"BF NOTE LEFT",
+      "loop":false
+    },
+    {
+      "name":"singDOWN",
+      "offset":[
+        -20.0,
+        -51.0
+      ],
+      "xmlPrefix":"BF NOTE DOWN",
+      "loop":false
+    },
+    {
+      "name":"singUP",
+      "offset":[
+        -46.0,
+        27.0
+      ],
+      "xmlPrefix":"BF NOTE UP",
+      "loop":false
+    },
+    {
+      "name":"singRIGHT",
+      "offset":[
+        -48.0,
+        -7.0
+      ],
+      "xmlPrefix":"BF NOTE RIGHT",
+      "loop":false
+    },
+    {
+      "name":"singLEFTmiss",
+      "offset":[
+        7.0,
+        19.0
+      ],
+      "xmlPrefix":"BF NOTE LEFT MISS",
+      "loop":false
+    },
+    {
+      "name":"singDOWNmiss",
+      "offset":[
+        -15.0,
+        -19.0
+      ],
+      "xmlPrefix":"BF NOTE DOWN MISS",
+      "loop":false
+    },
+    {
+      "name":"singUPmiss",
+      "offset":[
+        -46.0,
+        27.0
+      ],
+      "xmlPrefix":"BF NOTE UP MISS",
+      "loop":false
+    },
+    {
+      "name":"singRIGHTmiss",
+      "offset":[
+        -44.0,
+        22.0
+      ],
+      "xmlPrefix":"BF NOTE RIGHT MISS",
+      "loop":false
+    },
+    {
+      "name":"hey",
+      "offset":[
+        -3.0,
+        5.0
+      ],
+      "xmlPrefix":"BF HEY!!",
+      "loop":false
+    },
+    {
+      "name":"scared",
+      "offset":[
+        -6.0,
+        0.0
+      ],
+      "xmlPrefix":"BF idle shaking",
+      "loop":false
+    },
+    {
+      "name":"cheer",
+      "offset":[
+        -37.0,
+        17.0
+      ],
+      "xmlPrefix":"Boyfriend YEAH cheer",
+      "loop":false
+    }
+  ],
+  "scale":1.0,
+  "flipX":false
+}

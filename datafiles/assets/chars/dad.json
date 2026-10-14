@@ -1,0 +1,37 @@
+{
+  "displayName": "Daddy Dearest",
+  "imagePath": "assets/images/characters/DADDY_DEAREST",
+  "frameRate": 24,
+  "scale": 1,
+  "flipX": true,
+  "playableCharacter": false,
+  "position": [-400, -370],
+  "camOffset": [400, 150],
+  "animations": [
+    {
+      "xmlPrefix": "idle",
+      "name": "idle",
+      "offset": [0, 0]
+    },
+    {
+      "xmlPrefix": "singRIGHT",
+      "name": "singRIGHT",
+      "offset": [0, 27]
+    },
+    {
+      "xmlPrefix": "singDOWN",
+      "name": "singDOWN",
+      "offset": [0, -30]
+    },
+    {
+      "xmlPrefix": "singUP",
+      "name": "singUP",
+      "offset": [-6, 50]
+    },
+    {
+      "xmlPrefix": "singLEFT",
+      "name": "singLEFT",
+      "offset": [-10, 10]
+    }
+  ]
+}

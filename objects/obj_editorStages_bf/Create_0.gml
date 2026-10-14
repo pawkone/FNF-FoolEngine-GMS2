@@ -1,0 +1,1 @@
+sprite_index = obj_editorStages.bfspr

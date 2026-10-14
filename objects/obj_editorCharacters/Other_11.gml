@@ -1,0 +1,5 @@
+jsonData_character_editor(character)
+character = filename_name(character)
+if string_ends_with(character, ".json")
+	character = string_delete(character, -5, 5)
+event_user(2)

@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="uiArrows.png">
+  <!--Made with insider fool engine tools (NOT PUBLIC)-->
+  <!--From file: NOTE_assets.xml-->
+  <SubTexture name="StrumlineConfirmDOWN0000" width="238" height="235" x="838" y="1705" />
+  <SubTexture name="StrumlineConfirmDOWN0001" width="238" height="235" x="1078" y="1705" />
+  <SubTexture name="StrumlineConfirmDOWN0002" width="221" height="217" frameX="-8" frameY="-10" frameWidth="238" frameHeight="235" x="1318" y="1705" />
+  <SubTexture name="StrumlineConfirmDOWN0003" width="221" height="217" frameX="-8" frameY="-10" frameWidth="238" frameHeight="235" x="1318" y="1705" />
+  <SubTexture name="StrumlineConfirmLEFT0000" width="200" height="208" frameX="-7" frameY="-3" frameWidth="217" frameHeight="220" x="1836" y="1705" />
+  <SubTexture name="StrumlineConfirmLEFT0001" width="200" height="204" frameX="-7" frameY="-3" frameWidth="217" frameHeight="220" x="0" y="1942" />
+  <SubTexture name="StrumlineConfirmLEFT0002" width="217" height="220" x="202" y="1942" />
+  <SubTexture name="StrumlineConfirmLEFT0003" width="217" height="220" x="202" y="1942" />
+  <SubTexture name="StrumlineConfirmRIGHT0000" width="223" height="226" frameX="-1" frameY="-3" frameWidth="226" frameHeight="230" x="711" y="1942" />
+  <SubTexture name="StrumlineConfirmRIGHT0001" width="223" height="226" frameX="-1" frameY="-3" frameWidth="226" frameHeight="230" x="936" y="1942" />
+  <SubTexture name="StrumlineConfirmRIGHT0002" width="226" height="230" x="1161" y="1942" />
+  <SubTexture name="StrumlineConfirmRIGHT0003" width="226" height="230" x="1161" y="1942" />
+  <SubTexture name="StrumlineConfirmUP0000" width="236" height="232" x="1679" y="1942" />
+  <SubTexture name="StrumlineConfirmUP0001" width="236" height="232" x="1917" y="1942" />
+  <SubTexture name="StrumlineConfirmUP0002" width="214" height="211" frameX="-11" frameY="-10" frameWidth="236" frameHeight="232" x="0" y="2176" />
+  <SubTexture name="StrumlineConfirmUP003" width="214" height="211" frameX="-11" frameY="-10" frameWidth="236" frameHeight="232" x="0" y="2176" />
+  <SubTexture name="StrumlinePressDOWN0000" width="142" height="140" frameX="-4" frameY="-2" frameWidth="149" frameHeight="146" x="1541" y="1705" />
+  <SubTexture name="StrumlinePressDOWN0001" width="142" height="140" frameX="-4" frameY="-2" frameWidth="149" frameHeight="146" x="1541" y="1705" />
+  <SubTexture name="StrumlinePressDOWN0002" width="149" height="146" x="1685" y="1705" />
+  <SubTexture name="StrumlinePressDOWN0003" width="149" height="146" x="1685" y="1705" />
+  <SubTexture name="StrumlinePressLEFT0000" width="140" height="142" frameX="-3" frameY="-3" frameWidth="146" frameHeight="149" x="421" y="1942" />
+  <SubTexture name="StrumlinePressLEFT0001" width="140" height="142" frameX="-3" frameY="-3" frameWidth="146" frameHeight="149" x="421" y="1942" />
+  <SubTexture name="StrumlinePressLEFT0002" width="146" height="149" x="563" y="1942" />
+  <SubTexture name="StrumlinePressLEFT0003" width="146" height="149" x="563" y="1942" />
+  <SubTexture name="StrumlinePressRIGHT0000" width="138" height="141" frameX="-3" frameY="-7" frameWidth="148" frameHeight="151" x="1389" y="1942" />
+  <SubTexture name="StrumlinePressRIGHT0001" width="138" height="141" frameX="-3" frameY="-7" frameWidth="148" frameHeight="151" x="1389" y="1942" />
+  <SubTexture name="StrumlinePressRIGHT0002" width="148" height="151" x="1529" y="1942" />
+  <SubTexture name="StrumlinePressRIGHT0003" width="148" height="151" x="1529" y="1942" />
+  <SubTexture name="StrumlinePressUP0000" width="144" height="141" frameX="-5" frameY="-4" frameWidth="153" frameHeight="150" x="216" y="2176" />
+  <SubTexture name="StrumlinePressUP0001" width="144" height="141" frameX="-5" frameY="-4" frameWidth="153" frameHeight="150" x="216" y="2176" />
+  <SubTexture name="StrumlinePressUP0002" width="153" height="150" x="362" y="2176" />
+  <SubTexture name="StrumlinePressUP0003" width="153" height="150" x="362" y="2176" />
+  <SubTexture name="StrumlineStaticDOWN0000" width="157" height="153" x="1384" y="1445" />
+  <SubTexture name="StrumlineStaticLEFT0000" width="153" height="157" x="1543" y="1445" />
+  <SubTexture name="StrumlineStaticRIGHT0000" width="153" height="157" x="1698" y="1445" />
+  <SubTexture name="StrumlineStaticUP0000" width="157" height="153" x="1853" y="1445" />
+  <SubTexture name="noteDOWN0000" width="157" height="154" x="52" y="1705" />
+  <SubTexture name="noteDOWNend0000" width="50" height="64" x="211" y="1705" />
+  <SubTexture name="noteDOWNhold0000" width="50" height="44" x="263" y="1705" />
+  <SubTexture name="noteLEFT0000" width="154" height="157" x="2012" y="1445" />
+  <SubTexture name="noteLEFTend0000" width="50" height="64" x="2168" y="1445" />
+  <SubTexture name="noteLEFThold0000" width="50" height="44" x="0" y="1705" />
+  <SubTexture name="noteRIGHT0000" width="154" height="157" x="578" y="1705" />
+  <SubTexture name="noteRIGHTend0000" width="50" height="64" x="734" y="1705" />
+  <SubTexture name="noteRIGHThold0000" width="50" height="44" x="786" y="1705" />
+  <SubTexture name="noteUP0000" width="157" height="154" x="315" y="1705" />
+  <SubTexture name="noteUPend0000" width="50" height="64" x="474" y="1705" />
+  <SubTexture name="noteUPhold0000" width="50" height="44" x="526" y="1705" />
+  <!--From file: holdCoverBlue.xml-->
+  <SubTexture name="holdCoverBlue0001" width="138" height="108" frameX="-94" frameY="-94" frameWidth="300" frameHeight="400" x="95" y="0" />
+  <SubTexture name="holdCoverBlue0002" width="120" height="96" frameX="-100" frameY="-104" frameWidth="300" frameHeight="400" x="235" y="0" />
+  <SubTexture name="holdCoverBlue0003" width="93" height="80" frameX="-115" frameY="-107" frameWidth="300" frameHeight="400" x="357" y="0" />
+  <SubTexture name="holdCoverBlue0004" width="78" height="36" frameX="-122" frameY="-133" frameWidth="300" frameHeight="400" x="452" y="0" />
+  <SubTexture name="holdCoverEndBlue0001" width="78" height="36" frameX="-122" frameY="-133" frameWidth="300" frameHeight="400" x="452" y="0" />
+  <SubTexture name="holdCoverEndBlue0002" width="168" height="146" frameX="-72" frameY="-59" frameWidth="300" frameHeight="400" x="532" y="0" />
+  <SubTexture name="holdCoverEndBlue0003" width="215" height="185" frameX="-47" frameY="-55" frameWidth="300" frameHeight="400" x="702" y="0" />
+  <SubTexture name="holdCoverEndBlue0004" width="215" height="185" frameX="-47" frameY="-55" frameWidth="300" frameHeight="400" x="702" y="0" />
+  <SubTexture name="holdCoverEndBlue0005" width="230" height="192" frameX="-44" frameY="-62" frameWidth="300" frameHeight="400" x="919" y="0" />
+  <SubTexture name="holdCoverEndBlue0006" width="246" height="193" frameX="-43" frameY="-78" frameWidth="300" frameHeight="400" x="1151" y="0" />
+  <SubTexture name="holdCoverEndBlue0007" width="242" height="167" frameX="-53" frameY="-113" frameWidth="300" frameHeight="400" x="1399" y="0" />
+  <SubTexture name="holdCoverEndBlue0008" width="242" height="167" frameX="-53" frameY="-113" frameWidth="300" frameHeight="400" x="1399" y="0" />
+  <SubTexture name="holdCoverStartBlue0001" width="93" height="93" frameX="-111" frameY="-107" frameWidth="300" frameHeight="400" x="0" y="0" />
+  <!--From file: holdCoverGreen.xml-->
+  <SubTexture name="holdCoverEndGreen0001" width="78" height="36" frameX="-122" frameY="-133" frameWidth="300" frameHeight="400" x="2096" y="0" />
+  <SubTexture name="holdCoverEndGreen0002" width="168" height="146" frameX="-72" frameY="-59" frameWidth="300" frameHeight="400" x="0" y="195" />
+  <SubTexture name="holdCoverEndGreen0003" width="215" height="185" frameX="-47" frameY="-55" frameWidth="300" frameHeight="400" x="170" y="195" />
+  <SubTexture name="holdCoverEndGreen0004" width="215" height="185" frameX="-47" frameY="-55" frameWidth="300" frameHeight="400" x="170" y="195" />
+  <SubTexture name="holdCoverEndGreen0005" width="230" height="192" frameX="-44" frameY="-62" frameWidth="300" frameHeight="400" x="387" y="195" />
+  <SubTexture name="holdCoverEndGreen0006" width="246" height="193" frameX="-43" frameY="-78" frameWidth="300" frameHeight="400" x="619" y="195" />
+  <SubTexture name="holdCoverEndGreen0007" width="243" height="167" frameX="-52" frameY="-113" frameWidth="300" frameHeight="400" x="867" y="195" />
+  <SubTexture name="holdCoverEndGreen0008" width="243" height="167" frameX="-52" frameY="-113" frameWidth="300" frameHeight="400" x="867" y="195" />
+  <SubTexture name="holdCoverGreen0001" width="139" height="108" frameX="-93" frameY="-94" frameWidth="300" frameHeight="400" x="1738" y="0" />
+  <SubTexture name="holdCoverGreen0002" width="120" height="96" frameX="-100" frameY="-104" frameWidth="300" frameHeight="400" x="1879" y="0" />
+  <SubTexture name="holdCoverGreen0003" width="93" height="80" frameX="-115" frameY="-107" frameWidth="300" frameHeight="400" x="2001" y="0" />
+  <SubTexture name="holdCoverGreen0004" width="78" height="36" frameX="-122" frameY="-133" frameWidth="300" frameHeight="400" x="2096" y="0" />
+  <SubTexture name="holdCoverStartGreen0001" width="93" height="93" frameX="-111" frameY="-107" frameWidth="300" frameHeight="400" x="1643" y="0" />
+  <!--From file: holdCoverPurple.xml-->
+  <SubTexture name="holdCoverEndPurple0001" width="78" height="36" frameX="-122" frameY="-133" frameWidth="300" frameHeight="400" x="1565" y="195" />
+  <SubTexture name="holdCoverEndPurple0002" width="168" height="146" frameX="-72" frameY="-59" frameWidth="300" frameHeight="400" x="1645" y="195" />
+  <SubTexture name="holdCoverEndPurple0003" width="215" height="185" frameX="-47" frameY="-55" frameWidth="300" frameHeight="400" x="1815" y="195" />
+  <SubTexture name="holdCoverEndPurple0004" width="215" height="185" frameX="-47" frameY="-55" frameWidth="300" frameHeight="400" x="1815" y="195" />
+  <SubTexture name="holdCoverEndPurple0005" width="230" height="192" frameX="-44" frameY="-62" frameWidth="300" frameHeight="400" x="0" y="390" />
+  <SubTexture name="holdCoverEndPurple0006" width="246" height="193" frameX="-43" frameY="-78" frameWidth="300" frameHeight="400" x="232" y="390" />
+  <SubTexture name="holdCoverEndPurple0007" width="243" height="167" frameX="-52" frameY="-113" frameWidth="300" frameHeight="400" x="480" y="390" />
+  <SubTexture name="holdCoverEndPurple0008" width="243" height="167" frameX="-52" frameY="-113" frameWidth="300" frameHeight="400" x="480" y="390" />
+  <SubTexture name="holdCoverPurple0001" width="139" height="108" frameX="-93" frameY="-94" frameWidth="300" frameHeight="400" x="1207" y="195" />
+  <SubTexture name="holdCoverPurple0002" width="120" height="96" frameX="-100" frameY="-104" frameWidth="300" frameHeight="400" x="1348" y="195" />
+  <SubTexture name="holdCoverPurple0003" width="93" height="80" frameX="-115" frameY="-107" frameWidth="300" frameHeight="400" x="1470" y="195" />
+  <SubTexture name="holdCoverPurple0004" width="78" height="36" frameX="-122" frameY="-133" frameWidth="300" frameHeight="400" x="1565" y="195" />
+  <SubTexture name="holdCoverStartPurple0001" width="93" height="93" frameX="-111" frameY="-107" frameWidth="300" frameHeight="400" x="1112" y="195" />
+  <!--From file: holdCoverRed.xml-->
+  <SubTexture name="holdCoverEndRed0001" width="78" height="36" frameX="-122" frameY="-133" frameWidth="300" frameHeight="400" x="1178" y="390" />
+  <SubTexture name="holdCoverEndRed0002" width="168" height="146" frameX="-72" frameY="-59" frameWidth="300" frameHeight="400" x="1258" y="390" />
+  <SubTexture name="holdCoverEndRed0003" width="215" height="185" frameX="-47" frameY="-55" frameWidth="300" frameHeight="400" x="1428" y="390" />
+  <SubTexture name="holdCoverEndRed0004" width="215" height="185" frameX="-47" frameY="-55" frameWidth="300" frameHeight="400" x="1428" y="390" />
+  <SubTexture name="holdCoverEndRed0005" width="230" height="192" frameX="-44" frameY="-62" frameWidth="300" frameHeight="400" x="1645" y="390" />
+  <SubTexture name="holdCoverEndRed0006" width="246" height="193" frameX="-43" frameY="-78" frameWidth="300" frameHeight="400" x="1877" y="390" />
+  <SubTexture name="holdCoverEndRed0007" width="243" height="167" frameX="-52" frameY="-113" frameWidth="300" frameHeight="400" x="0" y="585" />
+  <SubTexture name="holdCoverEndRed0008" width="243" height="167" frameX="-52" frameY="-113" frameWidth="300" frameHeight="400" x="0" y="585" />
+  <SubTexture name="holdCoverRed0001" width="139" height="108" frameX="-93" frameY="-94" frameWidth="300" frameHeight="400" x="820" y="390" />
+  <SubTexture name="holdCoverRed0002" width="120" height="96" frameX="-100" frameY="-104" frameWidth="300" frameHeight="400" x="961" y="390" />
+  <SubTexture name="holdCoverRed0003" width="93" height="80" frameX="-115" frameY="-107" frameWidth="300" frameHeight="400" x="1083" y="390" />
+  <SubTexture name="holdCoverRed0004" width="78" height="36" frameX="-122" frameY="-133" frameWidth="300" frameHeight="400" x="1178" y="390" />
+  <SubTexture name="holdCoverStartRed0001" width="93" height="93" frameX="-111" frameY="-107" frameWidth="300" frameHeight="400" x="725" y="390" />
+  <!--From file: noteSplashes.xml-->
+  <SubTexture name="splash1DOWN0000" width="189" height="270" frameX="-32" frameY="-12" frameWidth="260" frameHeight="298" x="245" y="585" />
+  <SubTexture name="splash1DOWN0001" width="213" height="265" frameX="-27" frameY="-22" frameWidth="260" frameHeight="298" x="436" y="585" />
+  <SubTexture name="splash1DOWN0002" width="252" height="291" frameX="-4" frameY="-6" frameWidth="260" frameHeight="298" x="651" y="585" />
+  <SubTexture name="splash1DOWN0003" width="260" height="298" x="905" y="585" />
+  <SubTexture name="splash1LEFT0000" width="189" height="270" frameX="-32" frameY="-12" frameWidth="260" frameHeight="298" x="0" y="885" />
+  <SubTexture name="splash1LEFT0001" width="213" height="265" frameX="-27" frameY="-22" frameWidth="260" frameHeight="298" x="191" y="885" />
+  <SubTexture name="splash1LEFT0002" width="252" height="291" frameX="-4" frameY="-6" frameWidth="260" frameHeight="298" x="406" y="885" />
+  <SubTexture name="splash1LEFT0003" width="260" height="298" x="660" y="885" />
+  <SubTexture name="splash1RIGHT0000" width="189" height="270" frameX="-32" frameY="-12" frameWidth="260" frameHeight="298" x="922" y="885" />
+  <SubTexture name="splash1RIGHT0001" width="213" height="265" frameX="-27" frameY="-22" frameWidth="260" frameHeight="298" x="1113" y="885" />
+  <SubTexture name="splash1RIGHT0002" width="252" height="291" frameX="-4" frameY="-6" frameWidth="260" frameHeight="298" x="1328" y="885" />
+  <SubTexture name="splash1RIGHT0003" width="260" height="298" x="1582" y="885" />
+  <SubTexture name="splash1UP0000" width="189" height="270" frameX="-32" frameY="-12" frameWidth="260" frameHeight="298" x="1167" y="585" />
+  <SubTexture name="splash1UP0001" width="213" height="265" frameX="-27" frameY="-22" frameWidth="260" frameHeight="298" x="1358" y="585" />
+  <SubTexture name="splash1UP0002" width="252" height="291" frameX="-4" frameY="-6" frameWidth="260" frameHeight="298" x="1573" y="585" />
+  <SubTexture name="splash1UP0003" width="260" height="298" x="1827" y="585" />
+  <SubTexture name="splash2DOWN0000" width="169" height="201" frameX="-45" frameY="-41" frameWidth="274" frameHeight="267" x="1844" y="885" />
+  <SubTexture name="splash2DOWN0001" width="225" height="238" frameX="-20" frameY="-19" frameWidth="274" frameHeight="267" x="0" y="1185" />
+  <SubTexture name="splash2DOWN0002" width="265" height="257" frameX="0" frameY="-10" frameWidth="274" frameHeight="267" x="227" y="1185" />
+  <SubTexture name="splash2DOWN0003" width="224" height="258" frameX="-50" frameY="0" frameWidth="274" frameHeight="267" x="494" y="1185" />
+  <SubTexture name="splash2LEFT0000" width="169" height="201" frameX="-45" frameY="-41" frameWidth="274" frameHeight="267" x="1611" y="1185" />
+  <SubTexture name="splash2LEFT0001" width="225" height="238" frameX="-20" frameY="-19" frameWidth="274" frameHeight="267" x="1782" y="1185" />
+  <SubTexture name="splash2LEFT0002" width="265" height="257" frameX="0" frameY="-10" frameWidth="274" frameHeight="267" x="0" y="1445" />
+  <SubTexture name="splash2LEFT0003" width="224" height="258" frameX="-50" frameY="0" frameWidth="274" frameHeight="267" x="267" y="1445" />
+  <SubTexture name="splash2RIGHT0000" width="169" height="201" frameX="-45" frameY="-41" frameWidth="274" frameHeight="267" x="493" y="1445" />
+  <SubTexture name="splash2RIGHT0001" width="225" height="238" frameX="-20" frameY="-19" frameWidth="274" frameHeight="267" x="664" y="1445" />
+  <SubTexture name="splash2RIGHT0002" width="265" height="257" frameX="0" frameY="-10" frameWidth="274" frameHeight="267" x="891" y="1445" />
+  <SubTexture name="splash2RIGHT0003" width="224" height="258" frameX="-50" frameY="0" frameWidth="274" frameHeight="267" x="1158" y="1445" />
+  <SubTexture name="splash2UP0000" width="169" height="201" frameX="-45" frameY="-41" frameWidth="274" frameHeight="267" x="720" y="1185" />
+  <SubTexture name="splash2UP0001" width="225" height="238" frameX="-20" frameY="-19" frameWidth="274" frameHeight="267" x="891" y="1185" />
+  <SubTexture name="splash2UP0002" width="265" height="257" frameX="0" frameY="-10" frameWidth="274" frameHeight="267" x="1118" y="1185" />
+  <SubTexture name="splash2UP0003" width="224" height="258" frameX="-50" frameY="0" frameWidth="274" frameHeight="267" x="1385" y="1185" />
+  </TextureAtlas>

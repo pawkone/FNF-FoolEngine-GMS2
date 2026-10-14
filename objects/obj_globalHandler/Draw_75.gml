@@ -1,0 +1,6 @@
+draw_set_font(fnt_debug)
+draw_set_colour(c_white)
+draw_set_alpha(1)
+draw_set_halign(0)
+draw_set_valign(0)
+draw_text(13, 5, fp)

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_mainGamePlay",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_mainGamePlay",
+  "parent":{
+    "name":"mainGamePlay",
+    "path":"folders/States/mainGamePlay.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

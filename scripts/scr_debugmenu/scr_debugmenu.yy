@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_debugmenu",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_debugmenu",
+  "parent":{
+    "name":"debugmenu",
+    "path":"folders/States/debugmenu.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
