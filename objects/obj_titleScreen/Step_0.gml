@@ -1,7 +1,9 @@
+if gotooptions
+	room_goto(rm_mainSettings)
+if gotodebugmenu
+	room_goto(rm_debugmenu)
 if !started
 {
-	if keyboard_check_pressed(vk_f1)
-		instance_create_depth(0,0,0,obj_keys)
 	if keyboard_check_pressed(vk_enter)
 	{
 		alpha = 1

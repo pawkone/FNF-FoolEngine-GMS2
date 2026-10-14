@@ -46,4 +46,3 @@ and of course...
 ### IF YOU USE THIS ENGINE, THEN PLEASE CREDIT "FNF : FOOL ENGINE (GMS2)" or "pawkone"
 ### All miscellaneous credits are credited in .txt files within the folders that they reside in
 ### You can use this engine right now but it is in its early stage of development
-### Go to the titlescreen and press F1 to change your keybinds

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_mainSettings",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_mainSettings",
+  "parent":{
+    "name":"mainSettings",
+    "path":"folders/States/mainSettings.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

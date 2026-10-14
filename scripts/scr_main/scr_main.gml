@@ -18,11 +18,6 @@ global.fpsMult = 0
 global.gameSizeW = 1280
 global.gameSizeH = 720
 
-global.settings_hitSounds = true
-global.settings_ghostTapping = true
-global.settings_botPlay = false
-global.settings_noteSplashes = true
-
 global.sD_comfirm_room = rm_mainGamePlay
 global.sD_cancel_room = rm_titleScreen
 
@@ -159,23 +154,4 @@ function get_song_audio(songname = global.mGP_name, loadinst = true, loadvoices 
 		}
 	}
 	return _loaded
-}
-function get_settings()
-{
-	global.mGP_keys = [ord("A"), ord("S"), ord("W"), ord("D")]
-	ini_open(game_save_id + "settings.ini")
-	global.mGP_keys[0] = ini_read_real("Keybinds", "left", global.mGP_keys[0])
-	global.mGP_keys[1] = ini_read_real("Keybinds", "down", global.mGP_keys[1])
-	global.mGP_keys[2] = ini_read_real("Keybinds", "up", global.mGP_keys[2])
-	global.mGP_keys[3] = ini_read_real("Keybinds", "right", global.mGP_keys[3])
-	ini_close()
-}
-function save_settings()
-{
-	ini_open(game_save_id + "settings.ini")
-	ini_write_real("Keybinds", "left", global.mGP_keys[0])
-	ini_write_real("Keybinds", "down", global.mGP_keys[1])
-	ini_write_real("Keybinds", "up", global.mGP_keys[2])
-	ini_write_real("Keybinds", "right", global.mGP_keys[3])
-	ini_close()
 }

@@ -13,8 +13,6 @@ global.mGP_chart = "chart" //but with suffixs like "-hard"
 
 function mGP_init()
 {
-	get_settings()
-
 	global.mGP_disablePause = false
 	global.mGP_skipCountdown = false
 	global.mGP_hideRating = false
@@ -33,7 +31,7 @@ function mGP_init()
 
 	//dont change this
 	//vvv
-	global.mGP_speed = 3.1
+	global.mGP_speed = 3.5
 	global.mGP_charBF = "bf"
 	global.mGP_charDad = "dad"
 	global.mGP_charGF = "gf"

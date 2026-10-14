@@ -9,4 +9,3 @@ fp = ""
 volume = 1
 depth = -9999
 resize2gamesize()
-display_reset(4, 1)

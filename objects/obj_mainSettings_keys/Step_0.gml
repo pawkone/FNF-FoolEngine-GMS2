@@ -7,7 +7,7 @@ if keyboard_check_pressed(vk_anykey) && !keyboard_check_pressed(vk_enter) && !ke
 	if dir == "Up" { dir = "Right" exit }
 	if dir == "Right"
 	{
-		save_settings()
+		mS_save()
 		show_message("Done setting up keybinds!")
 		instance_destroy()
 		exit
