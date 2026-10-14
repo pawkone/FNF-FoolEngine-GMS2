@@ -2,7 +2,7 @@
 ### A [Friday Night Funkin'](https://github.com/FunkinCrew/funkin) engine made in [GMS2](https://gamemaker.io/en)
 #
 
-<img width="300" alt="logobumpinj" src="https://github.com/user-attachments/assets/272facb6-0756-46cf-b557-a93258dbf118" />
+<img width="300" alt="Fool Engine Logo, made by TargetBuldoser" src="https://github.com/user-attachments/assets/272facb6-0756-46cf-b557-a93258dbf118" />
 
 #
 
@@ -37,3 +37,5 @@ and of course...
 
 - [FunkinCrew](https://github.com/FunkinCrew)
 - - The lovely team and people behind the making of [Friday Night Funkin'](https://github.com/FunkinCrew/funkin)
+
+## NOTE: All miscellaneous credits are credited in .txt files within the folders that they reside in
