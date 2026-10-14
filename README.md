@@ -2,6 +2,7 @@
 ### A [Friday Night Funkin'](https://github.com/FunkinCrew/funkin) engine made in [GMS2](https://gamemaker.io/en)
 
 THIS PROJECT IS NOT FINISHED OR INTENDED TO BE USED IN ITS CURRENT STATE
+
 (Aka.. You can use it right now, but we don't recommend it since it is unfinished)
 
 #
