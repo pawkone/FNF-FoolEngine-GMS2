@@ -1,0 +1,1 @@
+soundpool_load(global.assetsfolder + "sounds/hitnote/" + global.mS_hitsoundName + "/1.ogg")

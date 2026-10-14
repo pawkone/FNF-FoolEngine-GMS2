@@ -12,7 +12,7 @@ if global.savedebugmenu_menu == debugmenu_scrtype.selectsong
 	global.savedebugmenu_items = []
 	global.savedebugmenu_itemsact = []
 
-	var _file_name = file_find_first(assetsfolder + "songs/" + global.savedebugmenu_cursong + "/*.json", fa_none)
+	var _file_name = file_find_first(global.assetsfolder + "songs/" + global.savedebugmenu_cursong + "/*.json", fa_none)
 	while _file_name != ""
 	{
 		array_push(global.savedebugmenu_items, string_delete(_file_name,-5,5))

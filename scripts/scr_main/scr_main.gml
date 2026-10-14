@@ -11,9 +11,10 @@ gml_release_mode(true)
 texturegroup_set_mode(true, false, spr_error)
 scheduler_resolution_set(16)
 gc_target_frame_time(-100)
+gmlvm_init()
 
-#macro assetsfolder ((GM_build_type == "run" ? working_directory : program_directory) + "assets/")
-global.fps = 600
+global.assetsfolder = (GM_build_type == "run" ? working_directory : program_directory) + "assets/"
+global.fps = 60
 global.fpsMult = 0
 global.gameSizeW = 1280
 global.gameSizeH = 720
@@ -26,23 +27,20 @@ global.fnt_bold01spr = -4
 global.fnt_bold00fnt = -4
 global.fnt_bold01fnt = -4
 
-if file_exists(assetsfolder + "images/ui/fonts/bold00.png")
+if file_exists(global.assetsfolder + "images/ui/fonts/bold00.png")
 {
-	global.fnt_bold00spr = spritepool_load(assetsfolder + "images/ui/fonts/bold00.png", 40, 50, 50)
+	global.fnt_bold00spr = spritepool_load(global.assetsfolder + "images/ui/fonts/bold00.png", 40, 50, 50)
 	global.fnt_bold00fnt = font_add_sprite_ext(global.fnt_bold00spr, "#$%(),-!.?':;ABCDEFGHIJKLMNOPQRSTUVWXYZ_", true, -55)
 }
-if file_exists(assetsfolder + "images/ui/fonts/bold01.png")
+if file_exists(global.assetsfolder + "images/ui/fonts/bold01.png")
 {
-	global.fnt_bold01spr = spritepool_load(assetsfolder + "images/ui/fonts/bold01.png", 40, 50, 50)
+	global.fnt_bold01spr = spritepool_load(global.assetsfolder + "images/ui/fonts/bold01.png", 40, 50, 50)
 	global.fnt_bold01fnt = font_add_sprite_ext(global.fnt_bold01spr, "#$%(),-!.?':;ABCDEFGHIJKLMNOPQRSTUVWXYZ_", true, -55)
 }
 
-global.sfx_mnu_cancel = soundpool_load(assetsfolder + "sounds/cancelMenu.ogg")
-global.sfx_mnu_scroll = soundpool_load(assetsfolder + "sounds/scrollMenu.ogg")
-global.sfx_mnu_confirm = soundpool_load(assetsfolder + "sounds/confirmMenu.ogg")
-global.sfx_hitsound = soundpool_load(assetsfolder + "sounds/hitsound.ogg")
-
-
+global.sfx_mnu_cancel = soundpool_load(global.assetsfolder + "sounds/cancelMenu.ogg")
+global.sfx_mnu_scroll = soundpool_load(global.assetsfolder + "sounds/scrollMenu.ogg")
+global.sfx_mnu_confirm = soundpool_load(global.assetsfolder + "sounds/confirmMenu.ogg")
 
 
 function draw_text_boldfont(xx,yy,txt,xscale=1,yscale=1,angle=0)
@@ -70,6 +68,10 @@ function draw_text_boldfont(xx,yy,txt,xscale=1,yscale=1,angle=0)
 function resize2gamesize()
 {
 	surface_resize(application_surface, global.gameSizeW, global.gameSizeH)
+	display_set_gui_size(global.gameSizeW, global.gameSizeH)
+	camera_set_view_size(view_camera[0], global.gameSizeW, global.gameSizeH)
+	view_set_wport(0, global.gameSizeW)
+	view_set_hport(0, global.gameSizeH)
 	room_width = global.gameSizeW
 	room_height = global.gameSizeH
 }
@@ -121,34 +123,34 @@ function get_song_audio(songname = global.mGP_name, loadinst = true, loadvoices 
 	var _loaded = false
 	if loadinst
 	{
-		if file_exists(assetsfolder + "songs/" + songname + "/Inst.ogg")
+		if file_exists(global.assetsfolder + "songs/" + songname + "/Inst.ogg")
 		{
 			_loaded = true
-			instPATH = assetsfolder + "songs/" + songname + "/Inst.ogg"
+			instPATH = global.assetsfolder + "songs/" + songname + "/Inst.ogg"
 			instID = soundpool_load(instPATH)
 			inst = audio_play_sound(instID, 10, false, 1,0,_pitch)
 		}
 	}
 	if loadvoices
 	{
-		if file_exists(assetsfolder + "songs/" + songname + "/Voices.ogg")
+		if file_exists(global.assetsfolder + "songs/" + songname + "/Voices.ogg")
 		{
 			_loaded = true
-			vocalsPATH = assetsfolder + "songs/" + songname + "/Voices.ogg"
+			vocalsPATH = global.assetsfolder + "songs/" + songname + "/Voices.ogg"
 			vocalsID = soundpool_load(vocalsPATH)
 			vocals = audio_play_sound(vocalsID, 10, false, 1,0,_pitch)
 		}
-		if file_exists(assetsfolder + "songs/" + songname + "/Voices-Opponent.ogg")
+		if file_exists(global.assetsfolder + "songs/" + songname + "/Voices-Opponent.ogg")
 		{
 			_loaded = true
-			vocals1PATH = assetsfolder + "songs/" + songname + "/Voices-Opponent.ogg"
+			vocals1PATH = global.assetsfolder + "songs/" + songname + "/Voices-Opponent.ogg"
 			vocals1ID = soundpool_load(vocals1PATH)
 			vocals1 = audio_play_sound(vocals1ID, 10, false, 1,0,_pitch)
 		}
-		if file_exists(assetsfolder + "songs/" + songname + "/Voices-Player.ogg")
+		if file_exists(global.assetsfolder + "songs/" + songname + "/Voices-Player.ogg")
 		{
 			_loaded = true
-			vocals2PATH = assetsfolder + "songs/" + songname + "/Voices-Player.ogg"
+			vocals2PATH = global.assetsfolder + "songs/" + songname + "/Voices-Player.ogg"
 			vocals2ID = soundpool_load(vocals2PATH)
 			vocals2 = audio_play_sound(vocals2ID, 10, false, 1,0,_pitch)
 		}

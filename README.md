@@ -15,7 +15,7 @@ This engine **tries to mimic like "normal" FNF engines that you might know of..*
 - An "assets/" folder
 - - With your normal ol' folders inside like "songs/" and "images/"
 - Spritesheet Support
-- - XMLs (Natively rendered in GMS2, Supports "rotate=true" and more)
+- - XMLs (Natively rendered in GMS2, Supports 'rotated="true"' and more)
 - Character JSONs
 - - Custom format, but based on [PsychEngine](https://github.com/ShadowMario/FNF-PsychEngine)
 - OGG (Vorbis) Audio

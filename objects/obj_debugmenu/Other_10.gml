@@ -12,7 +12,7 @@ global.savedebugmenu_distxt = "Select a song to load it or make a song, press es
 global.savedebugmenu_items = []
 global.savedebugmenu_itemsact = []
 
-var _file_name = file_find_first(assetsfolder + "songs/*", fa_directory)
+var _file_name = file_find_first(global.assetsfolder + "songs/*", fa_directory)
 while _file_name != ""
 {
 	array_push(global.savedebugmenu_items, _file_name)

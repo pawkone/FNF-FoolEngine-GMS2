@@ -12,11 +12,11 @@ audio_stop_all()
 intro = true
 comfirmed = false
 
-deadsfxid = soundpool_load(assetsfolder + "sounds/fnf_loss_sfx.ogg")
+deadsfxid = soundpool_load(global.assetsfolder + "sounds/fnf_loss_sfx.ogg")
 deadsfx = audio_play_sound(deadsfxid,1,false)
-deadmusicid = soundpool_load(assetsfolder + "music/gameOver.ogg")
+deadmusicid = soundpool_load(global.assetsfolder + "music/gameOver.ogg")
 deadmusic = -4
-deadendmusicid = soundpool_load(assetsfolder + "music/gameOverEnd.ogg")
+deadendmusicid = soundpool_load(global.assetsfolder + "music/gameOverEnd.ogg")
 deadendmusic = -4
 
 oldCurBeat = -4

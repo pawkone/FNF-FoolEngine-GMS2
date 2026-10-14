@@ -10,7 +10,7 @@ global.savedebugmenu_distxt = string_upper(global.savedebugmenu_cursong) + " - S
 global.savedebugmenu_items = []
 global.savedebugmenu_itemsact = []
 
-var _file_name = file_find_first(assetsfolder + "chars/*.json", fa_none)
+var _file_name = file_find_first(global.assetsfolder + "chars/*.json", fa_none)
 while _file_name != ""
 {
 	array_push(global.savedebugmenu_items, string_delete(_file_name,-5,5))

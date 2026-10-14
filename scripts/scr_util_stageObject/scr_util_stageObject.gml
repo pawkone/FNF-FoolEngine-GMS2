@@ -4,7 +4,7 @@ function stageObject_create(_tagname, _x, _y, _spr)
 	with _obj
 	{
 		tag = _tagname
-		sprite_index = spritepool_load(assetsfolder + "images/" + (is_string(global.mGP_stage) ? $"bgs/{global.mGP_stage}/" : "") + _spr + ".png")
+		sprite_index = spritepool_load(global.assetsfolder + "images/" + (is_string(global.mGP_stage) ? $"bgs/{global.mGP_stage}/" : "") + _spr + ".png")
 	}
 	return _obj
 }

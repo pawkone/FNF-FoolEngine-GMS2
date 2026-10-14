@@ -1,0 +1,5 @@
+ini_open(global.assetsfolder + "sounds/hitnote/" + global.mS_hitsoundName + "/info.ini")
+name = ini_read_string("Info", "name", global.mS_hitsoundName)
+desc = ini_read_string("Info", "desc", "No description provided.")
+cred = "Made by: " + ini_read_string("Info", "credits", "Unknown")
+ini_close()

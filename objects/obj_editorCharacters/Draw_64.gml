@@ -62,14 +62,14 @@ for (var i = 0; i < array_length(things); i++)
 				}
 				var _spr = filename_name(_xml)
 				_spr = string_delete(_spr, -4, 4)
-				var _spr2 = string(assetsfolder + "images/characters/" + _spr)
+				var _spr2 = string(global.assetsfolder + "images/characters/" + _spr)
 				var buf_png = buffer_load(_png)
 				buffer_save(buf_png, _spr2 + ".png")
 				buffer_delete(buf_png)
 				var buf_xml = buffer_load(_xml)
 				buffer_save(buf_xml, _spr2 + ".xml")
 				buffer_delete(buf_xml)
-				jsonData_character_editor_empty(assetsfolder + "images/characters/" + _spr, real(_fps))
+				jsonData_character_editor_empty(global.assetsfolder + "images/characters/" + _spr, real(_fps))
 				event_user(2)
 			}
 			else if i == 1

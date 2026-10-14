@@ -40,7 +40,7 @@ if timer > 0
 		audio_resume_sound(vocals)
 		audio_resume_sound(vocals1)
 		audio_resume_sound(vocals2)
-		var __scrpath = assetsfolder + "songs/" + global.mGP_name + "/scr_songstart.gml"
+		var __scrpath = global.assetsfolder + "songs/" + global.mGP_name + "/scr_songstart.gml"
 		gmlscr_read(__scrpath)
 	}
 }
@@ -57,7 +57,7 @@ else
 		for (var i = 0; i < array_length(notes); i++)
 			triggered[i] = false
 		*/
-		var __scrpath = assetsfolder + "songs/" + global.mGP_name + "/scr_songend.gml"
+		var __scrpath = global.assetsfolder + "songs/" + global.mGP_name + "/scr_songend.gml"
 		gmlscr_read(__scrpath)
 		global.mGP_songended = true
 		mGP_endSong()
@@ -92,7 +92,7 @@ else
 }
 
 if snipscr_update != -4
-	live_snippet_call(snipscr_update)
+	gmlvm_vm(snipscr_update)
 
 //bopppp canmeraa and icons
 if global.mGP_beat
@@ -177,7 +177,11 @@ for (var d = 4; d <= 7; d++)
 			if audio_exists(vocals2)
 				audio_sound_gain(vocals2, 1, 0)
 			if global.settings_hitSounds
-				audio_play_sound(global.sfx_hitsound, 1, false)
+			{
+				hitsoundDir = d
+				gmlvm_vm(global.mS_hitsoundScript)
+				hitsoundDir = -4
+			}
 			with nearest_note
             {
 				mGP_hitNote(d, false, abs(global.mGP_curTime - note_time))

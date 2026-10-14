@@ -1,0 +1,8 @@
+soundpool_load(global.assetsfolder + "sounds/hitnote/" + global.mS_hitsoundName + "1.ogg")
+soundpool_load(global.assetsfolder + "sounds/hitnote/" + global.mS_hitsoundName + "/1b.ogg")
+soundpool_load(global.assetsfolder + "sounds/hitnote/" + global.mS_hitsoundName + "/2.ogg")
+soundpool_load(global.assetsfolder + "sounds/hitnote/" + global.mS_hitsoundName + "/2b.ogg")
+soundpool_load(global.assetsfolder + "sounds/hitnote/" + global.mS_hitsoundName + "/3.ogg")
+soundpool_load(global.assetsfolder + "sounds/hitnote/" + global.mS_hitsoundName + "/3b.ogg")
+soundpool_load(global.assetsfolder + "sounds/hitnote/" + global.mS_hitsoundName + "/4.ogg")
+soundpool_load(global.assetsfolder + "sounds/hitnote/" + global.mS_hitsoundName + "/4b.ogg")

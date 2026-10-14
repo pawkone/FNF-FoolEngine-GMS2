@@ -16,7 +16,7 @@ function jsonData_songPath(path)
 }
 function jsonData_song()
 {
-	return jsonData_songPath(assetsfolder + "songs/" + global.mGP_name + "/" + global.mGP_chart + ".json")
+	return jsonData_songPath(global.assetsfolder + "songs/" + global.mGP_name + "/" + global.mGP_chart + ".json")
 }
 function jsonData_songEmpty()
 {
@@ -68,7 +68,7 @@ function jsonData_songFLXFNFCompatibility(parsedJson)
 	    for (var j = 0; j < array_length(sectionNotes); j++)
 		{
 	        var sectionNote = sectionNotes[j]
-			if mustHitSection
+			if struct_get(parsedJson.song, "format") == "psych_v1" || mustHitSection
 			{
 				if sectionNote[1] <= 3
 					sectionNote[1] += 4
@@ -121,7 +121,7 @@ function jsonData_character(char_name, char_type = "")
 	displayName = ""
 	camOffset = [0, 0]
 	sprw_scale = [1, 1]
-    var file_path = assetsfolder + "chars/" + char_name
+    var file_path = global.assetsfolder + "chars/" + char_name
 	if is_path_absolute(char_name)
 		file_path = "" + char_name
 	if !string_ends_with(char_name, ".json")
@@ -190,7 +190,7 @@ function jsonData_character_editor(char_name)
 	displayName = ""
 	camOffset = [0, 0]
 	sprw_scale = [1, 1]
-    var file_path = assetsfolder + "chars/" + char_name
+    var file_path = global.assetsfolder + "chars/" + char_name
 	if is_path_absolute(char_name)
 		file_path = char_name
 	if !string_ends_with(char_name, ".json")

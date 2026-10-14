@@ -16,14 +16,14 @@ function mGP_init()
 	global.mGP_disablePause = false
 	global.mGP_skipCountdown = false
 	global.mGP_hideRating = false
-	global.mGP_sprite_ui = assetsfolder + "images/ui/uiArrows"
-	global.mGP_sprite_rating_sick = spritepool_load(assetsfolder + "images/ui/rating/sick.png")
-	global.mGP_sprite_rating_good = spritepool_load(assetsfolder + "images/ui/rating/good.png")
-	global.mGP_sprite_rating_bad = spritepool_load(assetsfolder + "images/ui/rating/bad.png")
-	global.mGP_sprite_rating_shit = spritepool_load(assetsfolder + "images/ui/rating/shit.png")
-	global.mGP_sprite_countdown_go = spritepool_load(assetsfolder + "images/ui/countdown/go.png", 1, -1, -1)
-	global.mGP_sprite_countdown_set = spritepool_load(assetsfolder + "images/ui/countdown/set.png", 1, -1, -1)
-	global.mGP_sprite_countdown_ready = spritepool_load(assetsfolder + "images/ui/countdown/ready.png", 1, -1, -1)
+	global.mGP_sprite_ui = global.assetsfolder + "images/ui/uiArrows"
+	global.mGP_sprite_rating_sick = spritepool_load(global.assetsfolder + "images/ui/rating/sick.png")
+	global.mGP_sprite_rating_good = spritepool_load(global.assetsfolder + "images/ui/rating/good.png")
+	global.mGP_sprite_rating_bad = spritepool_load(global.assetsfolder + "images/ui/rating/bad.png")
+	global.mGP_sprite_rating_shit = spritepool_load(global.assetsfolder + "images/ui/rating/shit.png")
+	global.mGP_sprite_countdown_go = spritepool_load(global.assetsfolder + "images/ui/countdown/go.png", 1, -1, -1)
+	global.mGP_sprite_countdown_set = spritepool_load(global.assetsfolder + "images/ui/countdown/set.png", 1, -1, -1)
+	global.mGP_sprite_countdown_ready = spritepool_load(global.assetsfolder + "images/ui/countdown/ready.png", 1, -1, -1)
 	
 	global.mGP_cameraNote = true
 	global.mGP_cameraNote_intensityBF = 24

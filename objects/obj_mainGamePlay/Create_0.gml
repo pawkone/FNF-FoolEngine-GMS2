@@ -4,7 +4,7 @@ snipscr_update = -4
 snipscr_updatepost = -4
 
 var __scrpath
-__scrpath = assetsfolder + "songs/" + global.mGP_name + "/scr_initbegin.gml"
+__scrpath = global.assetsfolder + "songs/" + global.mGP_name + "/scr_initbegin.gml"
 gmlscr_read(__scrpath)
 
 audio_stop_all()
@@ -102,9 +102,9 @@ if variable_struct_exists(_jsondata[3], "stage")
 	global.mGP_stage = _jsondata[3].stage
 
 
-misssounds[0] = soundpool_load(assetsfolder + "sounds/missnote1.ogg")
-misssounds[1] = soundpool_load(assetsfolder + "sounds/missnote2.ogg")
-misssounds[2] = soundpool_load(assetsfolder + "sounds/missnote3.ogg")
+misssounds[0] = soundpool_load(global.assetsfolder + "sounds/missnote1.ogg")
+misssounds[1] = soundpool_load(global.assetsfolder + "sounds/missnote2.ogg")
+misssounds[2] = soundpool_load(global.assetsfolder + "sounds/missnote3.ogg")
 
 instance_create_depth(0,0,0,obj_healthBar)
 instance_create_depth(0,0,0,obj_mainPause)
@@ -115,8 +115,8 @@ instance_create_depth(0,0,0,obj_mainPause)
 	stageObject_char(900, 400, "bf")
 	stageObject_char(700, 430, "gf")
 	stageObject_char(600, 400, "dad")'
-	if global.mGP_stage != -4 && file_exists(assetsfolder + "stages/" + global.mGP_stage + ".stg")
-		script_text = file_string(assetsfolder + "stages/" + global.mGP_stage + ".stg")
+	if global.mGP_stage != -4 && file_exists(global.assetsfolder + "stages/" + global.mGP_stage + ".stg")
+		script_text = file_string(global.assetsfolder + "stages/" + global.mGP_stage + ".stg")
 	else
 		global.mGP_stage = -4
 	stage_create(script_text, obj_characterBF, obj_characterDad, obj_characterGF)
@@ -125,11 +125,11 @@ instance_create_depth(0,0,0,obj_mainPause)
 
 snipscr_update = -4
 snipscr_updatepost = -4
-__scrpath = assetsfolder + "songs/" + global.mGP_name + "/scr_init.gml"
+__scrpath = global.assetsfolder + "songs/" + global.mGP_name + "/scr_init.gml"
 gmlscr_read(__scrpath)
-__scrpath = assetsfolder + "songs/" + global.mGP_name + "/scr_update.gml"
+__scrpath = global.assetsfolder + "songs/" + global.mGP_name + "/scr_update.gml"
 snipscr_update = gmlscr_read_snippet(__scrpath)
-__scrpath = assetsfolder + "songs/" + global.mGP_name + "/scr_updatepost.gml"
+__scrpath = global.assetsfolder + "songs/" + global.mGP_name + "/scr_updatepost.gml"
 snipscr_updatepost = gmlscr_read_snippet(__scrpath)
 
 instID = -4
@@ -168,6 +168,7 @@ camera_set_view_size(_camid, global.gameSizeW*(2-global.mGP_gameZoom),global.gam
 camera_set_view_pos(_camid, global.mGP_gameX-(camera_get_view_width(_camid)/2), global.mGP_gameY-(camera_get_view_height(_camid)/2))
 camera_set_view_angle(_camid, global.mGP_gameAngle)
 
+hitsoundDir = -4
 countdown_3sfx = -4
 countdown_2sfx = -4
 countdown_1sfx = -4
@@ -180,19 +181,19 @@ get_song_audio()
 if global.mGP_skipCountdown
 {
 	timer = 0
-	var __scrpath = assetsfolder + "songs/" + global.mGP_name + "/scr_songstart.gml"
+	var __scrpath = global.assetsfolder + "songs/" + global.mGP_name + "/scr_songstart.gml"
 	gmlscr_read(__scrpath)
 }
 else
 {
 	timer = time_bpm_to_seconds(global.mGP_bpm)*4
-	countdown_go = spritepool_load(assetsfolder + "images/ui/countdown/go.png")
-	countdown_set = spritepool_load(assetsfolder + "images/ui/countdown/set.png")
-	countdown_ready = spritepool_load(assetsfolder + "images/ui/countdown/ready.png")
-	countdown_3sfx = soundpool_load(assetsfolder + "sounds/intro3.ogg")
-	countdown_2sfx = soundpool_load(assetsfolder + "sounds/intro2.ogg")
-	countdown_1sfx = soundpool_load(assetsfolder + "sounds/intro1.ogg")
-	countdown_gosfx = soundpool_load(assetsfolder + "sounds/introGo.ogg")
+	countdown_go = spritepool_load(global.assetsfolder + "images/ui/countdown/go.png")
+	countdown_set = spritepool_load(global.assetsfolder + "images/ui/countdown/set.png")
+	countdown_ready = spritepool_load(global.assetsfolder + "images/ui/countdown/ready.png")
+	countdown_3sfx = soundpool_load(global.assetsfolder + "sounds/intro3.ogg")
+	countdown_2sfx = soundpool_load(global.assetsfolder + "sounds/intro2.ogg")
+	countdown_1sfx = soundpool_load(global.assetsfolder + "sounds/intro1.ogg")
+	countdown_gosfx = soundpool_load(global.assetsfolder + "sounds/introGo.ogg")
 	audio_pause_sound(inst)
 	audio_pause_sound(vocals)
 	audio_pause_sound(vocals1)

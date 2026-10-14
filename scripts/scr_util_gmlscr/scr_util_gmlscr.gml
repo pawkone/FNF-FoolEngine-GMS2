@@ -12,7 +12,7 @@ function gmlscr_read(path)
 			file_text_readln(__file)
 		}
 		file_text_close(__file)
-		live_execute_string(__str)
+		gmlvm_run(__str)
 		show_debug_message("LOADED Script: " + path)
 		return true
 	}
@@ -37,7 +37,7 @@ function gmlscr_read_snippet(path)
 			file_text_readln(__file)
 		}
 		file_text_close(__file)
-		var _s = live_snippet_create(__str)
+		var _s = gmlvm_parse_only(__str)
 		show_debug_message("LOADED Script: " + path)
 		return _s
 	}

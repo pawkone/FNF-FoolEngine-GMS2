@@ -33,11 +33,11 @@ with obj_healthBar
 	draw_set_halign(0)
 	draw_set_valign(0)
 	var txt = $"Score : {global.mGP_score} | Misses : {global.mGP_misses}"
-	var x_offset = x + 600/2
-	var y_offset = y + 35
+	var x_offset = text_x
+	var y_offset = text_y
 	var offset = 2
-	var xscale = 1
-	var yscale = 1
+	var xscale = text_image_xscale
+	var yscale = text_image_yscale
 	var rot = 0
 	draw_set_halign(1)
 	draw_set_colour(c_black)
