@@ -135,7 +135,7 @@ function mGP_hitNote(dirNote, holdNote, distanceToPerfect = 0, endpart = false)
 	}
 	if global.settings_noteSplashes
 	{
-		if !holdNote && dirNote >= 4
+		if !holdNote && dirNote >= 4 && distanceToPerfect <= 33
 		{
 			with instance_create_depth(0,0,0,obj_arrowSplashes)
 			{

@@ -4,7 +4,7 @@ paused = false
 stop = false
 select = 0
 spr = [-4, -4]
-text = ["Resume", "Restart Song", "Exit To Menu", "debug room return"]
+text = ["Resume", "Restart Song", "Options", "Exit To Menu", "debug room return"]
 textcmd = [
 function()
 {
@@ -16,6 +16,15 @@ function()
 	stop = true
 	with instance_create_depth(0,0,0,obj_fadeout)
 		roomTarget = room
+	audio_stop_all()
+	audio_play_sound(global.sfx_mnu_scroll,1,false)
+},
+
+function()
+{
+	stop = true
+	with instance_create_depth(0,0,0,obj_fadeout)
+		roomTarget = rm_mainSettings
 	audio_stop_all()
 	audio_play_sound(global.sfx_mnu_scroll,1,false)
 },

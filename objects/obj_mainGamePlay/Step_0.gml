@@ -177,7 +177,10 @@ for (var d = 4; d <= 7; d++)
 			if dir == d
 			{
 				var dist = abs(global.mGP_curTime - note_time)
-	            if dist <= 100 && dist < nearest_dist
+				if (
+					(global.settings_botPlay && global.mGP_curTime - note_time + 10 >= 0)||
+					(!global.settings_botPlay && dist <= 100)
+				) && dist < nearest_dist
 	            {
 	                nearest_note = id
 	                nearest_dist = dist
