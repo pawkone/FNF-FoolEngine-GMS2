@@ -24,9 +24,7 @@ if !started
 	    image_yscale = 0.7
 	}
 }
-image_xscale = lerp(image_xscale, 0.65, (started ? 0.025 : 0.1) * global.fpsMult)
-image_yscale = image_xscale
-if started
+else
 {
 	alpha -= (1/90) * global.fpsMult
 	if start_timer < 0 && started <= 1
@@ -36,5 +34,11 @@ if started
 			roomTarget = rm_mainGamePlay
 	}
 	else
+	{
 		start_timer -= global.fpsMult/60
+		if keyboard_check_pressed(vk_enter)
+			start_timer = 0
+	}
 }
+image_xscale = lerp(image_xscale, 0.65, (started ? 0.025 : 0.1) * global.fpsMult)
+image_yscale = image_xscale
