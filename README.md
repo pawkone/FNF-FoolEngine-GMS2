@@ -1,5 +1,8 @@
 # FNF : Fool Engine ([FNF](https://github.com/FunkinCrew/funkin) in [GMS2](https://gamemaker.io/en))
 ### A [Friday Night Funkin'](https://github.com/FunkinCrew/funkin) engine made in [GMS2](https://gamemaker.io/en)
+
+THIS PROJECT IS NOT FINISHED OR INTENDED TO BE USED 
+
 #
 
 <img width="300" alt="Fool Engine Logo, made by TargetBuldoser" src="https://github.com/user-attachments/assets/272facb6-0756-46cf-b557-a93258dbf118" />
@@ -38,4 +41,9 @@ and of course...
 - [FunkinCrew](https://github.com/FunkinCrew)
 - - The lovely team and people behind the making of [Friday Night Funkin'](https://github.com/FunkinCrew/funkin)
 
-## NOTE: All miscellaneous credits are credited in .txt files within the folders that they reside in
+## LAST NOTES
+
+### IF YOU USE THIS ENGINE, THEN PLEASE CREDIT "FNF : FOOL ENGINE (GMS2)" or "pawkone"
+### All miscellaneous credits are credited in .txt files within the folders that they reside in
+### You can use this engine right now but it is in its early stage of development
+### Go to the titlescreen and press F1 to change your keybinds
