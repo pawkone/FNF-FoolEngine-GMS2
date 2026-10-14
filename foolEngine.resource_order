@@ -13,9 +13,9 @@
     {"name":"debugmenu","order":7,"path":"folders/States/debugmenu.yy",},
     {"name":"editorCharacters","order":5,"path":"folders/States/editorCharacters.yy",},
     {"name":"editorStages","order":8,"path":"folders/States/editorStages.yy",},
-    {"name":"mainSettings","order":9,"path":"folders/States/mainSettings.yy",},
     {"name":"misc","order":9,"path":"folders/States/mainGamePlay/misc.yy",},
     {"name":"stage","order":5,"path":"folders/States/mainGamePlay/stage.yy",},
+    {"name":"mainSettings","order":9,"path":"folders/States/mainSettings.yy",},
   ],
   "ResourceOrderSettings":[
     {"name":"fnt_score","order":1,"path":"fonts/fnt_score/fnt_score.yy",},

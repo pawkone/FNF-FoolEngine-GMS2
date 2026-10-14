@@ -127,7 +127,7 @@ snipscr_update = -4
 snipscr_updatepost = -4
 __scrpath = assetsfolder + "songs/" + global.mGP_name + "/scr_init.gml"
 gmlscr_read(__scrpath)
-__scrpath = assetsfolder + "songs/" + global.mGP_name + "/	.gml"
+__scrpath = assetsfolder + "songs/" + global.mGP_name + "/scr_update.gml"
 snipscr_update = gmlscr_read_snippet(__scrpath)
 __scrpath = assetsfolder + "songs/" + global.mGP_name + "/scr_updatepost.gml"
 snipscr_updatepost = gmlscr_read_snippet(__scrpath)
