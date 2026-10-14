@@ -108,6 +108,7 @@
     {"$GMIncludedFile":"","%Name":"chart.json","CopyToMask":-1,"filePath":"datafiles/assets/songs/test--philly-mice","name":"chart.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"CREDITS.txt","CopyToMask":-1,"filePath":"datafiles/assets/songs/test--philly-mice","name":"CREDITS.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Inst.ogg","CopyToMask":-1,"filePath":"datafiles/assets/songs/test--philly-mice","name":"Inst.ogg","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"scr_update.gml","CopyToMask":-1,"filePath":"datafiles/assets/songs/test--philly-mice","name":"scr_update.gml","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"Voices.ogg","CopyToMask":-1,"filePath":"datafiles/assets/songs/test--philly-mice","name":"Voices.ogg","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"chart.json","CopyToMask":-1,"filePath":"datafiles/assets/songs/test--redemptiion","name":"chart.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"CREDITS.txt","CopyToMask":-1,"filePath":"datafiles/assets/songs/test--redemptiion","name":"CREDITS.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
