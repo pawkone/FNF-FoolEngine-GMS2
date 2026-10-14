@@ -5,13 +5,13 @@ draw_clear_alpha(c_black, 0)
 if timer > 0 && sprite_exists(countdownspr)
 	draw_sprite_ext(countdownspr,0,global.gameSizeW/2,global.gameSizeH/2,1,1,0,c_white,countdownalpha)
 with obj_staticStrum
-	sprw_draw(x, y, 0.75, 0.75)
+	sprw_draw(x, y, 0.75 * image_xscale, 0.75 * image_yscale)
 with obj_arrowHold
-	sprw_draw(x + 42, y, 0.75, endpart ? 0.75 : ((global.mGP_speed/1.45)/3)*0.875)
+	sprw_draw(x + 42, y, 0.75 * image_xscale, (endpart ? 0.75 : ((global.mGP_speed/1.45)/3)*0.875) * image_yscale)
 with obj_arrow
-	sprw_draw(x, y, 0.75, 0.75)
+	sprw_draw(x, y, 0.75 * image_xscale, 0.75 * image_yscale)
 with obj_arrowSplashes
-	sprw_draw(x, y, 1, 1)
+	sprw_draw(x, y, image_xscale, image_yscale)
 with obj_healthBar
 {
 	var bar_width = 591 * (clamp(lerphealth, -0.01, 2) / 2)

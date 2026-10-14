@@ -1,6 +1,6 @@
 x = mGP_strumX()
 y = mGP_strumY()
-if y <= 120 + (global.mGP_strumpos[dir][1]-64) && dir <= 3
+if note_time - 50 <= global.mGP_curTime && dir <= 3
 {
 	if audio_exists(obj_mainGamePlay.vocals)
 		audio_sound_gain(obj_mainGamePlay.vocals, 1, 0)
