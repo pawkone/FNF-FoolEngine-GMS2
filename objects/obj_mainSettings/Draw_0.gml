@@ -16,13 +16,13 @@ if menu == 1
 	{
 		_sss = point_in_rectangle(mouse_x, mouse_y, 0, 100-16, global.gameSizeW, 100+16)
 		draw_set_colour(_sss ? c_aqua : c_white)
-		draw_text(300, 100, "Choose Hitsound Preset")
+		draw_text(300, 100, "Customize Hitsounds")
 		if mouse_check_button_pressed(mb_left) && _sss
 			instance_create_depth(0,0,0,obj_mainSettings_hitsound)
 	}
 	
-	debugui_checkbox(300, 200, "mS_ghostTapping", true, "Ghost Tapping", 2, 2, true)
-	debugui_checkbox(300, 250, "mS_missSounds", true, "Play Miss Sounds", 2, 2, true)
+	debugui_checkbox(300, 100+global.mS_hitSounds*50, "mS_ghostTapping", true, "Ghost Tapping", 2, 2, true)
+	debugui_checkbox(300, 150+global.mS_hitSounds*50, "mS_missSounds", true, "Play Miss Sounds", 2, 2, true)
 	
 	debugui_checkbox(300, 400, "mS_botPlay", true, "Botplay", 2, 2, true)
 }

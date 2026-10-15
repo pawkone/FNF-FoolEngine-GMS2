@@ -4,6 +4,11 @@ if keyboard_check_pressed(vk_shift)
 if !toggle
 {
 	var _oldselect = select
+	
+	if keyboard_check_pressed(vk_down) global.mS_hitSoundVolume -= 0.05
+	else if keyboard_check_pressed(vk_up) global.mS_hitSoundVolume += 0.05
+	global.mS_hitSoundVolume = clamp(global.mS_hitSoundVolume, 0, 1)
+	
 	if keyboard_check_pressed(vk_left) select--
 	else if keyboard_check_pressed(vk_right) select++
 	select = clamp(select, 0, array_length(items)-1)

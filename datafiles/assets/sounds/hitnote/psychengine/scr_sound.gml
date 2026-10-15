@@ -1,1 +1,1 @@
-audio_play_sound(soundpool_load(global.assetsfolder + "sounds/hitnote/" + global.mS_hitsoundName + "/1.ogg"), 1, false)
+audio_play_sound(soundpool_load(global.assetsfolder + "sounds/hitnote/" + global.mS_hitsoundName + "/1.ogg"), 1, false, global.mS_hitSoundVolume)

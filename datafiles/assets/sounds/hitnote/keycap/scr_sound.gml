@@ -1,1 +1,1 @@
-audio_play_sound(soundpool_load(string_concat(global.assetsfolder, "sounds/hitnote/", global.mS_hitsoundName, "/", (hitsoundDir-3), choose("","b"), ".ogg")), 1, false, 1, 0, random_range(0.92,1.08))
+audio_play_sound(soundpool_load(string_concat(global.assetsfolder, "sounds/hitnote/", global.mS_hitsoundName, "/", (hitsoundDir-3), choose("","b"), ".ogg")), 1, false, global.mS_hitSoundVolume, 0, random_range(0.92,1.08))
