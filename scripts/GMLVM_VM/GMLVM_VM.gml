@@ -1116,6 +1116,9 @@ function gmlvm_vm_builtin(_name) { // TODO: add more built in
     if (_name == "alarm_10") { _value = 10; return { found: _found, value: _value }; }
     if (_name == "alarm_11") { _value = 11; return { found: _found, value: _value }; }
 	
+	// CUSTOM FOOL ENGINE FIX CUZ IM DUMBY!!
+	if (_name == "pi") { _value = pi; return { found: _found, value: _value }; }
+	
 	// loop trough override functions
 	var override_keys = ds_map_keys_to_array(global.__gmlvm_override_functions);
 	for (var i = 0; i < array_length(override_keys); i++) {
