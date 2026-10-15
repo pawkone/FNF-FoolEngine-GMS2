@@ -38,7 +38,7 @@ It's because I can't really sit down and **be bothered to write down paragraphs 
 - [TargetBuldoser](https://github.com/targetbuldoser)
 - - Made all custom art & audio for the engine (Which includes the logo)
 - [erkan612](https://github.com/erkan612)
-- - Made "GMLVM" aka GameMaker Virtual Machine (The external GML reader that Fool Engine uses!)
+- - Made ["GMLVM"](https://github.com/erkan612/GMLVM) aka GameMaker Virtual Machine (The "GML Interpreter" for .gml files, that Fool Engine uses!)
 
 and of course...
 
