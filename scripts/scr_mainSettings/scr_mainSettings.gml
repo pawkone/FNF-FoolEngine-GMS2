@@ -12,6 +12,7 @@ function mS_load(_open_ini = false)
 		global.mS_hitsoundName = ini_read_string("Gameplay", "HitsoundsName", "foolengine")
 		global.mS_ghostTapping = ini_read_real("Gameplay", "ghostTapping", true)
 		global.mS_botPlay = ini_read_real("Gameplay", "Botplay", false)
+		global.mS_missSounds = ini_read_real("Gameplay", "missSounds", true)
 		
 		global.mS_noteSplashes = ini_read_real("Visuals", "noteSplashes", true)
 
@@ -41,6 +42,7 @@ function mS_save()
 	ini_write_string("Gameplay", "HitsoundsName", global.mS_hitsoundName)
 	ini_write_real("Gameplay", "ghostTapping", global.mS_ghostTapping)
 	ini_write_real("Gameplay", "Botplay", global.mS_botPlay)
+	ini_write_real("Gameplay", "missSounds", global.mS_missSounds)
 	
 	ini_write_real("Visuals", "noteSplashes", global.mS_noteSplashes)
 	

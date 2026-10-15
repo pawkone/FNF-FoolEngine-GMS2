@@ -209,7 +209,8 @@ for (var d = 4; d <= 7; d++)
 			global.mGP_health -= 0.06
 			global.mGP_score -= 10
 			global.mGP_misses++
-			audio_play_sound(choose(misssounds[0], misssounds[1], misssounds[2]), 1, false, 0.35)
+			if global.mS_missSounds
+				audio_play_sound(choose(misssounds[0], misssounds[1], misssounds[2]), 1, false, 0.35)
             with obj_characterBF
             {
                 singtime = 2

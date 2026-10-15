@@ -32,7 +32,8 @@ if dir >= 4 && y <= -100 + (global.mGP_strumpos[dir][1]-64)
 		global.mGP_health -= 0.04
 		global.mGP_score -= 50
 		global.mGP_misses++
-		audio_play_sound(choose(obj_mainGamePlay.misssounds[0], obj_mainGamePlay.misssounds[1], obj_mainGamePlay.misssounds[2]), 1, false, 0.35)
+		if global.mS_missSounds
+			audio_play_sound(choose(obj_mainGamePlay.misssounds[0], obj_mainGamePlay.misssounds[1], obj_mainGamePlay.misssounds[2]), 1, false, 0.35)
 	    with obj_characterBF
 	    {
 	        singtime = 2
