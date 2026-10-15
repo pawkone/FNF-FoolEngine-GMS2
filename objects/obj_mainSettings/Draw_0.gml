@@ -22,8 +22,9 @@ if menu == 1
 	}
 	
 	debugui_checkbox(300, 200, "mS_ghostTapping", true, "Ghost Tapping", 2, 2, true)
-	debugui_checkbox(300, 250, "mS_botPlay", true, "Botplay", 2, 2, true)
-	debugui_checkbox(300, 300, "mS_missSounds", true, "Play Miss Sounds", 2, 2, true)
+	debugui_checkbox(300, 250, "mS_missSounds", true, "Play Miss Sounds", 2, 2, true)
+	
+	debugui_checkbox(300, 400, "mS_botPlay", true, "Botplay", 2, 2, true)
 }
 if menu == 2
 {
