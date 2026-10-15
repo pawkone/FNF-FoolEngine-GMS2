@@ -1,10 +1,16 @@
-if roomLagDelay-- <= 0
+if roomLagDelay > 0
+{
+	roomLagDelay--
+	global.fpsMult = 0
+}
+else
 	global.fpsMult = delta_time * 0.00006
 if fp_updatetime <= 0
 {
 	fp_updatetime = 30
 	fp = "FPS: " + string(fps)
 	fp += "\nglobal.fpsMult: " + string(global.fpsMult)
+	fp += "\nroomLagDelay: " + string(roomLagDelay)
 }
 else
 	fp_updatetime -= global.fpsMult
