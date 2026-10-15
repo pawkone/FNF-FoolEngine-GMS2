@@ -1,7 +1,6 @@
 global.mS_savePath = game_save_id + "wiptempFE_settings.ini"
 
 mS_load(true)
-mS_save()
 
 function mS_load(_open_ini = false)
 {
