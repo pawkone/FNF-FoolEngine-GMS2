@@ -10,5 +10,5 @@ if (!texfilter) gpu_set_texfilter(false)
 draw_sprite_ext(sprite_index,image_index,x+camx,y+camy,image_xscale,image_yscale,image_angle,image_blend,image_alpha)
 
 if (shader != -4) shader_set(_shd)
-if (blendmode != bm_normal) gpu_set_blendmode(bm_normal)
+if (blendmode != bm_normal) gpu_set_blendmode_ext_sepalpha(bm_src_alpha, bm_inv_src_alpha, bm_one, bm_inv_src_alpha)
 if (!texfilter) gpu_set_texfilter(true)

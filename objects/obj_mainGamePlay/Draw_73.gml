@@ -1,5 +1,5 @@
 if !surface_exists(global.mGP_hudSurface)
-	global.mGP_hudSurface = surface_create(global.gameSizeW, global.gameSizeH, surface_rgba16float)
+	global.mGP_hudSurface = surface_create(global.gameSizeW, global.gameSizeH)
 surface_set_target(global.mGP_hudSurface)
 draw_clear_alpha(c_black, 0)
 if timer > 0 && sprite_exists(countdownspr)

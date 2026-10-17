@@ -5,7 +5,7 @@ if global.mGP_shader != -4
 		script_execute(global.mGP_shaderScript)
 }
 
-gpu_set_blendmode(bm_normal)
+gpu_set_blendmode_ext_sepalpha(bm_src_alpha, bm_inv_src_alpha, bm_one, bm_inv_src_alpha)
 draw_surface_ext(application_surface, 0, 0, 1, 1, 0, c_white, global.mGP_gameAlpha)
 try
 {

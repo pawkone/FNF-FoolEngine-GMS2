@@ -11,6 +11,7 @@ gml_release_mode(true)
 texturegroup_set_mode(true, false, spr_error)
 scheduler_resolution_set(16)
 gc_target_frame_time(-100)
+gpu_set_blendmode_ext_sepalpha(bm_src_alpha, bm_inv_src_alpha, bm_one, bm_inv_src_alpha)
 gmlvm_init()
 
 global.assetsfolder = (GM_build_type == "run" ? working_directory : program_directory) + "assets/"

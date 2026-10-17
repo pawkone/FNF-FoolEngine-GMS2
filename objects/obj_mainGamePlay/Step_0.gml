@@ -305,8 +305,7 @@ for (var i = 0; i < array_length(notes); i++)
 			}
 			if note[2] == 0
 				break
-			var _holdt = (global.mGP_bpm/100)
-			for (var i = 60; round(note[2]/_holdt) > i; i += 10)
+			for (var i = 60; round(note[2]) > i; i += 10)
 			{
 				with(instance_create_depth(0, 0, -999, obj_arrowHold))
 				{
@@ -314,7 +313,7 @@ for (var i = 0; i < array_length(notes); i++)
 					dir = note[1]
 					x = mGP_strumX()
 					y = mGP_strumY()
-					endpart = round(note[2]/_holdt) < i + 11
+					endpart = round(note[2]) < i + 11
 					if !preload_obj_notes.failed
 					{
 						sprw_animnames = preload_obj_notes.sprw_animnames
